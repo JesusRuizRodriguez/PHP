@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header h1 {
+  text-align: center;
+}
+
+#left {
+  max-width: 500px;
+  width: 100%;
+  float: left;
+  padding-left: 20px;
+}
+
+#right {
+  max-width: 500px;
+  width: 100%;
+  float: left;
+  padding-left: 20px;
+}
+
+fieldset {
+  background-color: #eeeeee;
+  border: 2px solid black;
+}
+
+legend {
+  color: green;
+}
+
+.display form label {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.display input {
+  padding: 10px;
+  margin: 0 10px 0;
+}
