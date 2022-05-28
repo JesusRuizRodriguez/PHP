@@ -1,0 +1,115 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+    background-color: #1e1e1e;
+    color:#FDFFFC;
+}
+
+body{
+    height: 100%;
+}
+
+.center{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.login{
+    margin: auto;
+    padding:20px;
+    width:300px;
+    height: 500px;
+    font-size: 1.3em;
+    background-color: #2f2f2e;
+}
+
+form{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+}
+
+h2{
+    width: 93%;
+    text-align: left;
+}
+
+label{
+    margin-bottom:5px;
+}
+
+input[type="text"],input[type="password"]{
+    height:30px;
+    width: 250px;
+    margin-bottom:20px;
+}
+
+input[type="submit"]{
+    width:245px;
+    height: 35px;
+    background-color:#C1292E;
+    border:none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #891D20;
+}
+
+input[type="submit"]:active{
+    background-color:#6E171A;
+}
+
+.submitLogin{
+    margin-top:30px;
+    margin-bottom:30px;
+    display: flex;
+    justify-content: center;
+}
+
+.login a{
+    font-size: 0.8em;
+    color:#FDFFFC;
+    text-align: center;
+}
+
+/* media queries del Login */
+
+@media (min-width:1600px){
+    
+
+    .login{
+        width:500px;
+        height: 500px;
+    }
+
+    input[type="text"],input[type="password"]{
+        height:30px;
+        width: 450px;
+        margin-bottom:20px;
+    }
+
+    input[type="submit"]{
+        width:400px;
+        height: 45px;
+        border-radius: 5px;
+        font-size: 1.5em;
+    }
+
+    .login a{
+        font-size: 1em;
+    }
+    
+    
+}

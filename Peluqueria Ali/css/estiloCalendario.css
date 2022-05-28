@@ -1,0 +1,182 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Raleway', sans-serif;
+    background-color: #1e1e1e;
+    color:#FDFFFC;
+}
+
+/* Estilo menu Hamburguesa */
+
+li{
+    list-style:none;
+}
+
+.respmenu a{
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color:#FDFFFC;
+}
+
+.respmenu a:hover{
+    font-weight: bold;
+}
+
+.cerrarSesion{
+    color:black;
+    background-color:#C1292E;
+}
+
+.cerrarSesion:hover{
+    background-color: #891D20;
+}
+
+.cerrarSesion:active{
+    background-color:#6E171A;
+}
+
+.check{
+    position: absolute;
+    left:17px;
+    top: 30px;
+    width: 50px;
+    height: 48px;
+    z-index: 3;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.respmenu{
+    position:absolute;
+    top:0;
+    width:175px;
+    left:-40vw;
+    height: 100%;
+    background-color: #41403F;
+    transition:all;
+    transition-duration:0.5s;
+}
+
+nav{
+    top:100px;
+    position:absolute;
+    display: block;
+    width: 100%;
+}
+
+.check:checked  ~.respmenu{
+    transform: translate(40vw);   
+}
+
+.superior{
+    margin-top:40px;
+}
+
+.menuH{
+    position: absolute;
+    left:15px;
+    z-index:2;
+    float:left;
+}
+
+.hamburguesa{
+    margin-left: 5px;
+    margin-bottom:10px;
+    width:45px;
+    height:5px;
+    border:1px solid #FDFFFC;
+    background-color: #FDFFFC;
+    border-radius: 15px;
+}
+
+/* HTML animacion menu hamburguesa */
+
+.bar1, .bar2, .bar3{
+    transition: all;
+    transition: 0.5s;
+}
+
+.check:checked  ~.superior .menuH .bar1{
+   transform-origin: left;
+   transform:rotateZ(46deg) translate(-0.5px) translateY(-0.5px);
+}
+
+.check:checked  ~.superior .menuH .bar2{
+    transform-origin: left;
+    transform:scale(0);
+} 
+
+.check:checked  ~.superior .menuH .bar3{
+    transform-origin: left;
+    transform:rotateZ(-46deg) translate(-1.5px) translateY(-0.5px);
+} 
+
+/* Estilo Calendario */
+main{
+    display: flex;
+    justify-content: center;
+}
+.mainCalendario{
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    align-items: center;
+    text-align: center;
+    background-color:#2f2f2e;
+    padding:10px;
+        
+}
+
+.conjuntoHoras{
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.horas{
+    background-color:#FDFFFC;
+    color:black;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:275px;
+    height:50px;
+    text-align: center;
+    font-size: 1.3em;
+    margin-top:10px;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+.horas:hover{
+    background-color: #b3b2b2;
+}
+
+.horas:active{
+    background-color: #7a7978;
+    
+}
+
+.tarde{
+    margin-top:50px;
+}
+
+@media (min-width:1600px){
+        
+    .mainCalendario{
+        width:850px;
+    }   
+    
+    .horas{
+        width:650px;
+    }   
+
+}
